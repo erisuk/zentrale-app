@@ -1,0 +1,13 @@
+:root { --bg: #f6f4ef; --text: #1f1d1a; --muted: #6b665e; --accent: #c96442; --line: #e3ded4; color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg: #1b1a18; --text: #f2efe9; --muted: #a39d93; --accent: #e08a6a; --line: #34312c; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 64px 20px 80px; }
+.mark { font-size: 15px; font-weight: 600; letter-spacing: .02em; color: var(--accent); }
+h1 { font-size: clamp(30px, 6vw, 44px); line-height: 1.15; margin: 10px 0 18px; }
+h2 { font-size: 20px; margin: 36px 0 8px; }
+p, li { color: var(--text); }
+.lead { font-size: 19px; color: var(--muted); }
+a { color: var(--accent); text-underline-offset: 3px; }
+ul { padding-left: 22px; }
+footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
